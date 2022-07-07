@@ -1,0 +1,59 @@
+{
+	"env": {
+		"es2021": true,
+		"node": true,
+    "browser": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"airbnb"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"prettier",
+		"react-hooks"
+	],
+	"rules": {
+	"linebreak-style": "off",
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "camelcase" : "off",
+    "no-undef": "warn",
+		"implicit-arrow-linebreak": "off",
+		"operator-linebreak": "off",
+		"no-restricted-globals": "off",
+		"no-unused-vars": "warn",
+		"arrow-parens": "off",
+		"object-curly-newline": "off",
+    "prefer-const": "off",
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": ["error"],
+		"import/prefer-default-export": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/prop-types": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"ts": "never",
+				"tsx": "never"
+			}
+		]
+	},
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+	}
+	}
+}
